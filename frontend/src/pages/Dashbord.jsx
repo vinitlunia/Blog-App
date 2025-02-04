@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
-import { useAuth } from "../context/authProvider"
+import { useAuth } from "../context/authProvider.jsx"
 import Sidebar from "../Deshbord/Sidebar";
 import MyProfile from '../Deshbord/MyProfile'
 import CreateBloge from '../Deshbord/createBloge'

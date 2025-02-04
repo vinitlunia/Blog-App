@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useAuth } from "../context/authProvider";
+import { useAuth } from "../context/authProvider.jsx";
 
 function Blogs() {
   const { blogs } = useAuth();
