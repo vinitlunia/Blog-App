@@ -7,7 +7,7 @@ import Contact from "./pages/Contact"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
 // import Footer from "./components/Footer"
-import { useAuth } from "./context/authProvider.jsx"
+import { useAuth } from "./context/AuthProvider.jsx"
 import Dashbord from "./pages/Dashbord.jsx"
 import Creaters from "./pages/Creaters.jsx"
 import  { Toaster } from 'react-hot-toast';
@@ -15,6 +15,7 @@ import Footer from "./components/Footer.jsx"
 import UpdateBlog from "./Deshbord/UpdateBlog.jsx"
 import Detail from "./pages/Detail.jsx"
 import NotFound from "./pages/NotFound.jsx"
+
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
   return (
     <div>
    {!hideNavbarFooter && <Navbar/>}
+   
 
     <Routes>
       <Route exact path="/"  element={token ? <Home /> : <Navigate to={"/login"} />}/>

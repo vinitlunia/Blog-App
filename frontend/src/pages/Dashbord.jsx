@@ -1,8 +1,8 @@
 import { Navigate } from "react-router-dom";
-import { useAuth } from "../context/authProvider.jsx"
+import { useAuth } from "../context/AuthProvider.jsx"
 import Sidebar from "../Deshbord/Sidebar";
 import MyProfile from '../Deshbord/MyProfile'
-import CreateBloge from '../Deshbord/createBloge'
+import CreateBlog from '../Deshbord/CreateBlog'
 import UpdateBlog from "../Deshbord/UpdateBlog";
 import MyBlogs from "../Deshbord/MyBlogs";
 import { useState } from "react";
@@ -25,7 +25,7 @@ function Dashbord() {
         {component === "My Profile" ? (
           <MyProfile />
         ) : component === "Create Blog" ? (
-          <CreateBloge />
+          <CreateBlog />
         ) : component === "Update Blog" ? (
           <UpdateBlog />
         ) : (

@@ -1,4 +1,4 @@
-import { useAuth } from "../context/authProvider";
+import { useAuth } from "../context/AuthProvider.jsx";
 
 function MyProfile() {
   const { profile } = useAuth();

@@ -4,8 +4,9 @@ import axios from "axios";
 import { CiMenuBurger } from "react-icons/ci";
 import { BiSolidLeftArrowAlt } from "react-icons/bi";
 import toast from "react-hot-toast";
-import { useAuth } from "../context/authProvider";
+import { useAuth } from "../context/AuthProvider.jsx";
 
+// eslint-disable-next-line react/prop-types
 function Sidebar({ setComponent }) {
   const { profile, setIsAuthenticated } = useAuth();
   console.log("ssssssssss",profile);
