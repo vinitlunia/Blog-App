@@ -7,7 +7,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+ const AuthProvider = ({ children }) => {
   const [blogs, setBlogs] = useState();
   const [profile, setProfile] = useState()
   const [isAuthenticated, setIsAuthenticated] = useState(false); // Add authentication state
@@ -59,5 +59,6 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
+export default AuthProvider
 // eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => useContext(AuthContext);
