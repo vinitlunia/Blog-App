@@ -7,7 +7,7 @@ import Contact from "./pages/Contact"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
 // import Footer from "./components/Footer"
-import { useAuth } from "./context/AuthProvider.jsx"
+import { useAuth } from "./context/AuthProvider"
 import Dashbord from "./pages/Dashbord.jsx"
 import Creaters from "./pages/Creaters.jsx"
 import  { Toaster } from 'react-hot-toast';

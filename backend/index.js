@@ -14,10 +14,7 @@ const port = process.env.PORT
 const MONGO_URL = process.env.MONGO_URI
 // console.log(MONGO_URL);
 
-const allowedOrigins = [
-    "http://localhost:5173",
-    "https://blog-app-weld-eight-47.vercel.app"
-  ];
+
 
 
 //medelware..
@@ -25,7 +22,7 @@ app.use(express.json())
 app.use(cookieParser());
 app.use(
     cors({ 
-    origin:  allowedOrigins,
+    origin: process.env.FRONTEND_URL,
     credentials: true,
     methods:["GET","POST","PUT","DELETE","PATCH"],
 
